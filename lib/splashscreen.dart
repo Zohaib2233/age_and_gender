@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'main_page.dart';
+import 'log_in.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 
@@ -18,7 +19,8 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(Duration(seconds: 5), () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(_)=> MainPage()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(_)=> MyLogin()));
+
     });
   }
   @override
